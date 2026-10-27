@@ -29,7 +29,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               <h3 style={{ fontSize: '1.25rem', fontWeight: 700 }}>Curriculum Vitae — {portfolioData.personal.name}</h3>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <a href="/Rohith_CV.pdf" download="Rohith_CV.pdf" className="btn-primary btn-sm">
+              <a href={`${import.meta.env.BASE_URL}Rohith_CV.pdf`} download="Rohith_CV.pdf" className="btn-primary btn-sm">
                 <Download size={16} /> Download PDF
               </a>
               <button onClick={onClose} style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', padding: '4px' }}>
@@ -40,7 +40,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 
           <div style={{ flex: 1, width: '100%', borderRadius: '12px', overflow: 'hidden', background: '#fff' }}>
             <iframe 
-              src="/Rohith_CV.pdf" 
+              src={`${import.meta.env.BASE_URL}Rohith_CV.pdf`} 
               title="Rohith CV Resume"
               style={{ width: '100%', height: '100%', border: 'none' }}
             />

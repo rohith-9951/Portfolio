@@ -9,7 +9,7 @@ export const portfolioData = {
     linkedin: "https://www.linkedin.com/in/chinthaginjala-venkata-rohith/",
     github: "https://github.com/rohith-9951",
     objective: "Motivated MCA graduate seeking an entry-level position in a reputable organization where I can apply my programming knowledge in Java, SQL, Machine Learning, and Web Technologies while continuously learning new technologies and contributing to the growth of the company.",
-    resumeUrl: "/Rohith_CV.pdf"
+    resumeUrl: `${import.meta.env.BASE_URL}Rohith_CV.pdf`
   },
   skills: [
     { name: "Java", category: "Languages & Core", level: 90, icon: "Code2" },

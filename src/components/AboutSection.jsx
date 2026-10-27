@@ -30,7 +30,7 @@ export default function AboutSection() {
           style={{ padding: '28px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', justifyContent: 'center' }}
         >
           <div style={{ width: '160px', height: '160px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #00f2fe', boxShadow: '0 0 30px rgba(0, 242, 254, 0.3)', marginBottom: '20px' }}>
-            <img src="/Profile1.png" alt="Rohith" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={`${import.meta.env.BASE_URL}Profile1.png`} alt="Rohith" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#f8fafc', marginBottom: '6px' }}>
             {portfolioData.personal.name}

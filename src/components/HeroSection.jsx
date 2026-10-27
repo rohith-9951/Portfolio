@@ -122,7 +122,7 @@ export default function HeroSection({ onOpenResume }) {
                 }}
               >
                 <img
-                  src="/Profile1.png"
+                  src={`${import.meta.env.BASE_URL}Profile1.png`}
                   alt="Chinthaginjala Venkata Rohith"
                   style={{
                     width: '100%',
